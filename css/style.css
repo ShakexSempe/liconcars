@@ -1775,9 +1775,10 @@ ol {
   display: block;
   margin: 1rem auto;
   text-transform: uppercase;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 2rem;
   border-radius: 0.25rem;
   color: #fff;
+  border-color: transparent;
   background: linear-gradient(0deg, #7e0c23, crimson);
   transition: 150ms linear;
 }
