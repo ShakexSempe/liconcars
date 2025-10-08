@@ -51,6 +51,10 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: start;
+
+                input {
+                    width: 100%;
+                }
             }
 
         button {
@@ -77,6 +81,7 @@
         input {
             margin-bottom: 1.5rem;
             position: relative;
+            width: 100%;
         }
 
         .form-output {

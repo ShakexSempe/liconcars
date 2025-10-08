@@ -1770,6 +1770,9 @@ ol {
     justify-content: space-between;
     align-items: start;
   }
+  .calculator form input {
+    width: 100%;
+  }
 }
 .calculator form button {
   display: block;
@@ -1793,6 +1796,7 @@ ol {
 .calculator form input {
   margin-bottom: 1.5rem;
   position: relative;
+  width: 100%;
 }
 .calculator form .form-output {
   margin-top: 10vh;
