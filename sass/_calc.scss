@@ -34,6 +34,7 @@
         }
 
         input {
+            font-size: 1.25rem;
             font-weight: 600;
             padding: 0.25rem;
             position: relative;
@@ -51,9 +52,22 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: start;
+                gap: 10vw;
+                padding: 5vh 5vw;
 
                 input {
                     width: 100%;
+                }
+
+                .form-input {
+                    // border: 1px solid red;
+                    flex-basis: 50%;
+                }
+                .form-output {
+                    // border: 1px solid green;
+                    flex-basis: 50%;
+                    background: #fff;
+                    padding: 1rem;
                 }
             }
 
@@ -61,12 +75,14 @@
                 display: block;
                 margin: 1rem auto;
                 text-transform: uppercase;
-                padding: .5rem 2rem;
+                padding: .5rem 1rem;
+                width: 70%;
                 border-radius: 0.25rem;
                 color: #fff;
                 border-color: transparent;
                 background: linear-gradient(0deg, hsl(348, 83%, 27%), crimson);
                 transition: 150ms linear;
+                border: none;
 
                 &:active {
                     scale: .95;
@@ -78,7 +94,8 @@
             text-transform: capitalize;
             font-weight: 600;
         }
-        input {
+
+        input, select {
             margin-bottom: 1.5rem;
             position: relative;
             width: 100%;

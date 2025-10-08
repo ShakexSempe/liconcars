@@ -1755,6 +1755,7 @@ ol {
   text-transform: capitalize;
 }
 .calculator .calc-title input {
+  font-size: 1.25rem;
   font-weight: 600;
   padding: 0.25rem;
   position: relative;
@@ -1769,21 +1770,33 @@ ol {
     display: flex;
     justify-content: space-between;
     align-items: start;
+    gap: 10vw;
+    padding: 5vh 5vw;
   }
   .calculator form input {
     width: 100%;
+  }
+  .calculator form .form-input {
+    flex-basis: 50%;
+  }
+  .calculator form .form-output {
+    flex-basis: 50%;
+    background: #fff;
+    padding: 1rem;
   }
 }
 .calculator form button {
   display: block;
   margin: 1rem auto;
   text-transform: uppercase;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
+  width: 70%;
   border-radius: 0.25rem;
   color: #fff;
   border-color: transparent;
   background: linear-gradient(0deg, #7e0c23, crimson);
   transition: 150ms linear;
+  border: none;
 }
 .calculator form button:active {
   scale: 0.95;
@@ -1793,7 +1806,7 @@ ol {
   text-transform: capitalize;
   font-weight: 600;
 }
-.calculator form input {
+.calculator form input, .calculator form select {
   margin-bottom: 1.5rem;
   position: relative;
   width: 100%;

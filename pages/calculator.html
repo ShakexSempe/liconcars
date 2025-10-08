@@ -143,14 +143,25 @@
                     <label for="deposit">deposit amount</label>
                     <input type="number" min="100000" id="deposit" placeholder="R">
 
-                    <label for="months">payment months</label>
-                    <input type="number" min="12" max="72" value="24" step="2" id="months">
-
+                    <!-- <label for="months">payment months</label>
+                    <input type="number" min="12" max="72" value="24" step="2" id="months"> --> 
+                    <label for="months">Payment term:</label>
+                    
+                    <select name="months" id="months">
+                        <option value="">--Payment term--</option>
+                        <option value="12">12</option>
+                        <option value="24">24</option>
+                        <option value="36">36</option>
+                        <option value="48">48</option>
+                        <option value="54">54</option>
+                        <option value="60">60</option>
+                        <option value="72">72</option>
+                    </select>
                     <!-- <label for="balloon">balloon payment</label>
                     <input type="number" id="balloon"> -->
 
                     <label for="interest">interest rate</label>
-                    <input type="number" min="0" max="100" placeholder="0.5%" id="interest">
+                    <input type="number" min="0" max="100" value="0.5" placeholder="0.5%" id="interest">
 
                     <!-- <button type="button" onclick="myFunction()">Calculate</button> -->
                     <button type="button" onclick="Calculate()">Calculate</button>
