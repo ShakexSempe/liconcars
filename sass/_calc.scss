@@ -46,10 +46,11 @@
 
     
     form {
-        padding-block: 5vh;
-
+        // padding-block: 5vh;
+        // border: 1px solid red;
         @media only screen and (min-width: 600px) {
                 display: flex;
+                flex-direction: row-reverse;
                 justify-content: space-between;
                 align-items: start;
                 gap: 10vw;
@@ -68,6 +69,7 @@
                     flex-basis: 50%;
                     background: #fff;
                     padding: 1rem;
+                    margin-bottom: 0;
                 }
             }
 
@@ -103,10 +105,11 @@
         }
 
         .form-output {
-            margin-top: 10vh;
-
+            // border: 1px solid red;
+            background-color: #ffff;
+            padding: 1rem;
+            margin-bottom: 5vh;
             
-
             .emp {
                 position: relative;
                 text-align: center;

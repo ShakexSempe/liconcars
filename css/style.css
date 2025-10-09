@@ -1762,12 +1762,10 @@ ol {
   border-color: transparent;
   border-bottom-color: crimson;
 }
-.calculator form {
-  padding-block: 5vh;
-}
 @media only screen and (min-width: 600px) {
   .calculator form {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: start;
     gap: 10vw;
@@ -1783,6 +1781,7 @@ ol {
     flex-basis: 50%;
     background: #fff;
     padding: 1rem;
+    margin-bottom: 0;
   }
 }
 .calculator form button {
@@ -1813,7 +1812,9 @@ ol {
   padding: 0.25rem;
 }
 .calculator form .form-output {
-  margin-top: 10vh;
+  background-color: #ffff;
+  padding: 1rem;
+  margin-bottom: 5vh;
 }
 .calculator form .form-output .emp {
   position: relative;
