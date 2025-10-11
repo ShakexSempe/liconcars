@@ -1762,10 +1762,12 @@ ol {
   border-color: transparent;
   border-bottom-color: crimson;
 }
+.calculator form {
+  padding-block: 5vh;
+}
 @media only screen and (min-width: 600px) {
   .calculator form {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: start;
     gap: 10vw;

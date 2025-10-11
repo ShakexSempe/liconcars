@@ -1,5 +1,4 @@
 
-
 function Calculate() {
     // INPUT VARIABLES
     // Extracting value in the PRICE AMOUNT 
