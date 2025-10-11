@@ -1734,6 +1734,10 @@ ol {
   max-width: 100%;
   padding: 5vh 5vw;
 }
+.calc-container p {
+  text-wrap: pretty;
+  line-height: 1.6;
+}
 
 .calculator .calc-title {
   text-align: center;
