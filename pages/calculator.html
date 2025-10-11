@@ -148,8 +148,8 @@
 
                     <div class="outputs">
                         <p >amount to finance<span id="finance">R</span></p>
-                        <!-- <p >interest amount<span id="interestAmount">R</span></p>
-                        <p >total cost of credit<span id="credit">R</span></p> -->
+                        <p >balloon amount<span id="balloonAmount">R</span></p>
+                        <!-- <p >total cost of credit<span id="credit">R</span></p> -->
                     </div>
 
 
@@ -157,7 +157,7 @@
 
                 <div class="form-input">
                     <label for="deposit">deposit amount</label>
-                    <input type="number" min="100000" id="deposit" placeholder="R">
+                    <input type="number" min="100000" value="200000" id="deposit" placeholder="R">
 
                     <!-- <label for="months">payment months</label>
                     <input type="number" min="12" max="72" value="24" step="2" id="months"> --> 
@@ -171,10 +171,11 @@
                         <option value="48">48</option>
                         <option value="54">54</option>
                         <option value="60">60</option>
-                        <option value="72">72</option>
+                        <option selected value="72">72</option>
                     </select>
-                    <!-- <label for="balloon">balloon payment</label>
-                    <input type="number" id="balloon"> -->
+
+                    <label for="balloon">balloon payment</label>
+                    <input type="number" id="balloon" step="0.1" value="0">
 
                     <label for="interest">interest rate</label>
                     <input type="number" min="0" max="100" value="0.5" placeholder="0.5%" id="interest">
