@@ -53,12 +53,14 @@
     form {
         padding-block: 5vh;
         // border: 1px solid red;
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 768px) {
                 display: flex;
                 justify-content: space-between;
                 align-items: start;
                 gap: 10vw;
-                padding: 5vh 5vw;
+                padding: 5vh 0;
+                max-width: 1024px;
+                margin-inline: auto;
 
                 input {
                     width: 100%;
@@ -128,7 +130,7 @@
                 &::after {
                     content: '';
                     position: absolute;
-                    bottom: -1rem;
+                    bottom: -0.5rem;
                     left: 50%;
                     translate: -50% 0;
                     width: 50%;
@@ -141,16 +143,16 @@
                     font-weight: 600;
                     text-transform: uppercase;
                     font-size: 1.25rem;
+                    font-size: clamp(1.125rem, 2vw, 1.25rem);
+                    color: #000;
                 }
     
                 .emp-amount {
                     font-size: 1.5rem;
                     color: #dc143c;
-                    font-weight: 700;
+                    font-weight: 800;
                     span {
                         // font-size: 1.25rem;
-                        font-weight: 400;
-    
                     }
                 }
 

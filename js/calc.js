@@ -28,7 +28,7 @@ function Calculate() {
     // Calculating TOTAL PAYMENT ie. THE EMP
     const total = ((amount / months) + interest).toFixed(2);
     // INSERT TOTAL IN EMP ELEMENT
-    document.querySelector("#emp").innerHTML = total;
+    document.querySelector("#emp").innerHTML = 'R' + total;
     // INSERT REMAINING FINANCE INTO ELEMENT
     document.querySelector("#finance").innerHTML = 'R' + (amount - deposit);
     // INSERT BALLOON AMOUNT INTO ELEMENT

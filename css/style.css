@@ -1769,13 +1769,15 @@ ol {
 .calculator form {
   padding-block: 5vh;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   .calculator form {
     display: flex;
     justify-content: space-between;
     align-items: start;
     gap: 10vw;
-    padding: 5vh 5vw;
+    padding: 5vh 0;
+    max-width: 1024px;
+    margin-inline: auto;
   }
   .calculator form input {
     width: 100%;
@@ -1834,7 +1836,7 @@ ol {
 .calculator form .form-output .emp::after {
   content: "";
   position: absolute;
-  bottom: -1rem;
+  bottom: -0.5rem;
   left: 50%;
   translate: -50% 0;
   width: 50%;
@@ -1847,14 +1849,13 @@ ol {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.25rem;
+  font-size: clamp(1.125rem, 2vw, 1.25rem);
+  color: #000;
 }
 .calculator form .form-output .emp .emp-amount {
   font-size: 1.5rem;
   color: #dc143c;
-  font-weight: 700;
-}
-.calculator form .form-output .emp .emp-amount span {
-  font-weight: 400;
+  font-weight: 800;
 }
 .calculator form .form-output .outputs {
   margin-top: 5vh;
