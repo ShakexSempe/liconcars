@@ -85,14 +85,22 @@
                 width: 70%;
                 border-radius: 0.25rem;
                 color: #fff;
-                border-color: transparent;
+                // border-color: transparent;
                 background: linear-gradient(0deg, hsl(348, 83%, 27%), crimson);
                 transition: 150ms linear;
                 border: none;
+                outline: 2px solid transparent;
+                outline-offset: 4px;
 
                 &:active {
                     scale: .95;
                 }
+
+                &:focus {
+                    outline: 2px solid #000;
+                    outline-offset: initial;
+                }
+
             }
 
         label {
@@ -167,7 +175,9 @@
 
             }
             
-            
+            .disclaimer {
+                margin-top: 5vh;
+            }
 
         }
     }

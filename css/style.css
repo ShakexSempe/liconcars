@@ -1798,13 +1798,18 @@ ol {
   width: 70%;
   border-radius: 0.25rem;
   color: #fff;
-  border-color: transparent;
   background: linear-gradient(0deg, #7e0c23, crimson);
   transition: 150ms linear;
   border: none;
+  outline: 2px solid transparent;
+  outline-offset: 4px;
 }
 .calculator form button:active {
   scale: 0.95;
+}
+.calculator form button:focus {
+  outline: 2px solid #000;
+  outline-offset: initial;
 }
 .calculator form label {
   display: block;
@@ -1863,6 +1868,9 @@ ol {
 }
 .calculator form .form-output .outputs p span {
   color: blue;
+}
+.calculator form .form-output .disclaimer {
+  margin-top: 5vh;
 }
 
 /*---------------------
