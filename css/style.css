@@ -1813,6 +1813,11 @@ ol {
   outline: 2px solid #000;
   outline-offset: initial;
 }
+.calculator form input[type=reset] {
+  width: 70%;
+  margin: 1rem auto;
+  display: block;
+}
 .calculator form label {
   display: block;
   text-transform: capitalize;

@@ -104,6 +104,12 @@
                 }
 
             }
+        
+        input[type="reset"]{
+            width: 70%;
+            margin: 1rem auto;
+            display: block;
+        }
 
         label {
             display: block;
