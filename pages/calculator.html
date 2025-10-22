@@ -127,80 +127,86 @@
 
             <div class="calc-title">
                 <h1>vehicle finance calculator</h1>
-                <p>calculate estimated monthly repayment & apply for finance  </p>
+                <p>Calculate estimated monthly repayment & apply for finance.</p>
+            </div>
+
+            <form action="">
+
                 <label class="price-label" for="price">vehicle purchase price <span>(Rands)</span></label>
                 <input 
                         id="price"
                         type="number" 
                         min="20000"
-                        value="450000"
+                        value="0"
                         step="1000"
                         placeholder="R450000">
-            </div>
 
-            <form action="">
+                <div class="flex-container">
 
-                <div class="form-input">
-                    <label for="deposit">deposit amount</label>
-                    <!-- <input type="number" step="500" min="1000" value="10000" id="deposit" placeholder="R"> -->
-                    <input type="number" min="1000" value="10000" id="deposit" placeholder="R">
-
-                    <!-- <label for="months">payment months</label>
-                    <input type="number" min="12" max="72" value="24" step="2" id="months"> --> 
-                    <label for="months">Payment term:</label>
+                    <div class="form-input">
+                        <label for="deposit">deposit amount</label>
+                        <!-- <input type="number" step="500" min="1000" value="10000" id="deposit" placeholder="R"> -->
+                        <input type="number" min="1000" value="10000" id="deposit" placeholder="R">
+    
+                        <!-- <label for="months">payment months</label>
+                        <input type="number" min="12" max="72" value="24" step="2" id="months"> --> 
+                        <label for="months">Payment term:</label>
+                        
+                        <select name="months" id="months">
+                            <option value="">--Payment term--</option>
+                            <option value="12">12</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+                            <option value="48">48</option>
+                            <option value="54">54</option>
+                            <option value="60">60</option>
+                            <option selected value="72">72</option>
+                        </select>
+    
+                        <label for="balloon">balloon payment</label>
+                        <input type="number" id="balloon" step="0.1" value="0">
+    
+                        <label for="interest">interest rate</label>
+                        <input type="number" min="0.1"  step="0.1" value="0.1" placeholder="0.5%" id="interest">
+    
+                        <!-- <button type="button" onclick="myFunction()">Calculate</button> -->
+                        <!-- <button type="submit" onclick="Calculate()">Calculate</button> -->
+                        <button type="submit">Calculate</button>
+                        <!-- <input type="reset" value="Reset"> -->
+    
+                    </div>
+    
+                    <div class="form-output">
+                        <div id="output" class="emp">
+                            <p class="emp-title">Estimated monthly payment</p>
+                            <p class="emp-amount" id="emp">R</p>
+                        </div>
+    
+                        <div class="outputs">
+                            <p >amount to finance<span id="finance">R</span></p>
+                            <p >balloon amount<span id="balloonAmount">R</span></p>
+                        <input type="reset" value="Reset">
+    
+                            <!-- <p >total cost of credit<span id="credit">R</span></p> -->
+                        </div>
+    
+                        <div class="disclaimer">
+                            <p>
+                                <strong>Disclaimer:</strong> We provide this calculator for convenience to you 
+                                to provide results based on your input and assumptions and 
+                                it should not be used for any other purpose. <br> We give no warranty, 
+                                express or implied, as to the accuracy, reliability and completeness of any information,
+                                formulae or calculations provided through its use. We do not accept 
+                                any liability for loss or damage of any nature, including indirect or consequential loss, 
+                                which may be attributable to the reliance on and use of the calculators.
+                            </p>
+                        </div>
+    
+    
+                    </div>
                     
-                    <select name="months" id="months">
-                        <option value="">--Payment term--</option>
-                        <option value="12">12</option>
-                        <option value="24">24</option>
-                        <option value="36">36</option>
-                        <option value="48">48</option>
-                        <option value="54">54</option>
-                        <option value="60">60</option>
-                        <option selected value="72">72</option>
-                    </select>
-
-                    <label for="balloon">balloon payment</label>
-                    <input type="number" id="balloon" step="0.1" value="0">
-
-                    <label for="interest">interest rate</label>
-                    <input type="number" min="0.1"  step="0.1" value="0.1" placeholder="0.5%" id="interest">
-
-                    <!-- <button type="button" onclick="myFunction()">Calculate</button> -->
-                    <!-- <button type="submit" onclick="Calculate()">Calculate</button> -->
-                    <button type="submit">Calculate</button>
-                    <!-- <input type="reset" value="Reset"> -->
-
                 </div>
 
-                <div class="form-output">
-                    <div id="output" class="emp">
-                        <p class="emp-title">Estimated monthly payment</p>
-                        <p class="emp-amount" id="emp">R</p>
-                    </div>
-
-                    <div class="outputs">
-                        <p >amount to finance<span id="finance">R</span></p>
-                        <p >balloon amount<span id="balloonAmount">R</span></p>
-                    <input type="reset" value="Reset">
-
-                        <!-- <p >total cost of credit<span id="credit">R</span></p> -->
-                    </div>
-
-                    <div class="disclaimer">
-                        <p>
-                            <strong>Disclaimer:</strong> We provide this calculator for convenience to you 
-                            to provide results based on your input and assumptions and 
-                            it should not be used for any other purpose. <br> We give no warranty, 
-                            express or implied, as to the accuracy, reliability and completeness of any information,
-                            formulae or calculations provided through its use. We do not accept 
-                            any liability for loss or damage of any nature, including indirect or consequential loss, 
-                            which may be attributable to the reliance on and use of the calculators.
-                        </p>
-                    </div>
-
-
-                </div>
 
             </form>
         

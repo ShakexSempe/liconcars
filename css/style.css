@@ -1741,8 +1741,6 @@ ol {
 
 .calculator .calc-title {
   text-align: center;
-  border-bottom: 2px solid #000;
-  padding-bottom: 1rem;
 }
 .calculator .calc-title h1 {
   text-transform: capitalize;
@@ -1753,32 +1751,10 @@ ol {
 .calculator .calc-title p {
   text-wrap: pretty;
 }
-.calculator .calc-title label {
-  color: crimson;
-  display: block;
-  text-transform: capitalize;
-}
-.calculator .calc-title input {
-  font-size: 1.25rem;
-  font-weight: 600;
-  padding: 0.25rem;
-  position: relative;
-  border-color: transparent;
-  border-bottom-color: crimson;
-}
 .calculator form {
-  padding-block: 5vh;
+  padding-top: 1rem;
 }
 @media only screen and (min-width: 768px) {
-  .calculator form {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    gap: 10vw;
-    padding: 5vh 0;
-    max-width: 1024px;
-    margin-inline: auto;
-  }
   .calculator form input {
     width: 100%;
   }
@@ -1790,6 +1766,30 @@ ol {
     background: #fff;
     padding: 1rem;
     margin-bottom: 0;
+  }
+}
+.calculator form .price-label {
+  color: crimson;
+  display: block;
+  text-transform: capitalize;
+}
+.calculator form #price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.25rem;
+  position: relative;
+  border-color: transparent;
+  border-bottom-color: crimson;
+}
+.calculator form .flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+@media only screen and (min-width: 768px) {
+  .calculator form .flex-container {
+    flex-direction: row;
+    gap: 5vw;
   }
 }
 .calculator form button {

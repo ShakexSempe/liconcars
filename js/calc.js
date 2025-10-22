@@ -30,7 +30,7 @@ function Calculate() {
     // INSERT REMAINING FINANCE INTO ELEMENT
     document.querySelector("#finance").innerHTML = 'R' + (amount - deposit);
     // INSERT BALLOON AMOUNT INTO ELEMENT
-    document.querySelector("#balloonAmount").innerHTML = 'R' + balloonAmount;
     // INSERT TOTAL IN EMP ELEMENT
     document.querySelector("#emp").innerHTML = 'R' + total;
+    document.querySelector("#balloonAmount").innerHTML = 'R' + balloonAmount;
 }
