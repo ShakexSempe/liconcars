@@ -7,6 +7,8 @@ form.addEventListener('submit', (e) => {
     Calculate();
 })
 
+
+
 function Calculate() {
     // INPUT VARIABLES
     // Extracting value in the PRICE AMOUNT 
@@ -33,4 +35,13 @@ function Calculate() {
     // INSERT TOTAL IN EMP ELEMENT
     document.querySelector("#emp").innerHTML = 'R' + total;
     document.querySelector("#balloonAmount").innerHTML = 'R' + balloonAmount;
+    
+    // RESET FORM ON FORM RESET BUTTON CLICK WITH EVENT LISTENER
+    const reset = document.querySelector('.reset');
+    reset.addEventListener('click' , ()=> {
+        document.querySelector("#emp").innerHTML = 'R';
+        document.querySelector("#finance").innerHTML = 'R';
+        document.querySelector("#balloonAmount").innerHTML = 'R';
+        
+    })
 }
